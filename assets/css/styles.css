@@ -4,6 +4,9 @@ body {
     color: #0B0B09;
     background-color:  #EAE6E5;
     text-align: center;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 ul{
     text-align:center;
@@ -11,7 +14,6 @@ ul{
 }
 .container {
     display: flex;
-    height: 100vh;
 }
 .gauche, .droite {
     flex: 1;
