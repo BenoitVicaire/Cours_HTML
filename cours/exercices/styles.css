@@ -1,0 +1,25 @@
+.Head {background-color: #1C7293}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0B0B09;
+    background-color:  #EAE6E5;
+    text-align: center;
+}
+ul{
+    text-align:center;
+    list-style-position: inside;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.gauche, .droite {
+    flex: 1;
+    padding: 20px;
+}
+.gauche {
+    background-color:#1C7293 ;
+}
+.droite {
+    background-color: #EAE6E5;
+}
