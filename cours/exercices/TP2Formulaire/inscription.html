@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../../../assets/css/stylexo.css">
+</head>
+<body>
+
+    <h1 class="title_centered">Formulaire</h1>
+    
+    <div class="test">
+    <form class="formulaire" action="/action_page.php">
+        <label for="fname">Prenom</label>
+        <input type ="text" id="fname" name="fname" placeholder="Xavier" required>
+
+        <label for="lname">Nom</label>
+        <input type ="text" id="lname" name="lname" placeholder="Dupont" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="55" required>
+
+        <label for="genre"> Genre</label><br>
+        <label for="Homme">Homme</label>
+        <input type="radio" id="Homme" name="Genre" value="Homme" required>
+        <label for="Femme">Femme</label>
+        <input type="radio" id="Femme" name="Genre" value="Femme">
+        <label for="Autres">Autres</label>
+        <input type="radio" id="Autres" name="Genre" value="Homme">
+
+        <label for="email">Email</label>
+        <input type="email" id="Email" name ="Email" placeholder="Xavierdupont@gmail.com" required>
+
+        <label for="pwd">Mot de passe</label>
+        <input type="password" id="pwd" name="pwd" placeholder="Password123!"required>
+
+        <label for="tel">Numéro de telephone</label>
+        <input type="tel" id="tel" name="tel" placeholder="0102030405" required>
+        <input type="submit" value="Connexion">
+
+        <a class="bouton" href="connexion.html">Connexion</a>
+        </table>
+    </form>
+    </div>
+    
+</body>
+</html>

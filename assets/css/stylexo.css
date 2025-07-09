@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+body {
+    background-color: #020212;
+    color:#F9EBE0;
+    font-family:"montserrat" ;
+    font-size: 18px;
+}
+.bouton{
+    border: #F9EBE0;
+    border-style: solid;
+    border-width: 1px;
+    color:#C8553D ;
+    background-color: #F9EBE0;
+}
+.formulaire {
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    /* margin: auto;
+    width: 500px; */
+}
+.test {
+    margin: auto;
+    width: 500px;
+}
+.title_centered{
+    text-align: center;
+}
