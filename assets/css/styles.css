@@ -1,16 +1,27 @@
-.Head {background-color: #1C7293}
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #0B0B09;
     background-color:  #EAE6E5;
     text-align: center;
-    margin:0;
+    margin-left: 50px;
+    margin-right: 50px;
     padding:0;
     box-sizing: border-box;
 }
+.Head {background-color: #1C7293;
+    
+}
+.detail {
+    display: block;
+    margin-left: 20px;
+    
+}
+
 ul{
-    text-align:center;
-    list-style-position: inside;
+    text-align:left;
+    list-style-position: outside;
+    padding-left: 20px;
 }
 .container {
     display: flex;
@@ -24,4 +35,15 @@ ul{
 }
 .droite {
     background-color: #EAE6E5;
+}
+.icon_reseau {
+    width: 40px;
+    height:40px;
+    margin:10px;
+    transition: transform 0.2s;
+}
+
+.icon-reseau:hover {
+    transform:scale(1.1);
+    cursor: pointer;
 }
