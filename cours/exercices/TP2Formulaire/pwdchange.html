@@ -8,12 +8,12 @@
 </head>
 <body>
     <h1 class="title_centered">Reinitialisez votre mot de passe</h1>
-    <form class="formulaire">
+    <form class="formulaire" action="/action_page.php">
         <label for="pwd">Veuillez entrez un nouveau mot de passe</label>
-        <input type="password" name="pwd" id="pwd" required pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/">
+        <input type="password" name="pwd" id="pwd" required minlength="10">
         <label for="pwd">Veuillez confirmez le mot de passe</label>
-        <input type="password" name="pwd" id="pwd" required pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/">
-        <input type="submit" value="Submit">
+        <input type="password" name="pwd" id="pwd" required minlength="10">
+        <input type="submit" value="submit">
         <a class="bouton" href="../TP1CV/tp1_cv.html">Retour à la page d'acceuil</a>
         
         

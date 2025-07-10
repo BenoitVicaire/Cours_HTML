@@ -14,12 +14,15 @@ body {
     text-decoration: none;
 }
 header,footer {
-    background-color: #586994;
+    /* background-color: #586994; */
+    background-image: linear-gradient(to right,#7D869C,#586994);
     text-decoration: none;
-    
+    padding-left: 5px;    
 }
 header {
-    text-align: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .head, .bottom {
     background-color: #7D869C;
@@ -59,4 +62,21 @@ header {
 .icons{
     height: 48px;
     width: 48px;
+}
+.boutons-stylés img {
+    background-color: #7D869C;
+    height: 100px;
+    width: 100px;
+}
+.liste-chapitre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}
+.liste-chapitre a {
+    color: #F9EBE0;
+    text-decoration: none;
 }

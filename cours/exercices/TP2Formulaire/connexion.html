@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="../../../assets/css/stylexo.css">
 </head>
 <body>
+    <script>
+    fetch("../Composant/header.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+    });
+    </script>
 
     <h1 class="title_centered">Connexion</h1>
     <form class="formulaire" action="/action_page.php">    
