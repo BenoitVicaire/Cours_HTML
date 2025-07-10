@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../assets/css/stylexo.css">
+    <title>Change your password</title>
+</head>
+<body>
+    <h1 class="title_centered">Reinitialisez votre mot de passe</h1>
+    <form class="formulaire">
+        <label for="pwd">Veuillez entrez un nouveau mot de passe</label>
+        <input type="password" name="pwd" id="pwd" required pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/">
+        <label for="pwd">Veuillez confirmez le mot de passe</label>
+        <input type="password" name="pwd" id="pwd" required pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/">
+        <input type="submit" value="Submit">
+        <a class="bouton" href="../TP1CV/tp1_cv.html">Retour à la page d'acceuil</a>
+        
+        
+    </form>
+</body>
+</html>

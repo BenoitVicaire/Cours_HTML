@@ -10,7 +10,6 @@
 
     <h1 class="title_centered">Formulaire</h1>
     
-    <div class="test">
     <form class="formulaire" action="/action_page.php">
         <label for="fname">Prenom</label>
         <input type ="text" id="fname" name="fname" placeholder="Xavier" required>
@@ -36,13 +35,12 @@
         <input type="password" id="pwd" name="pwd" placeholder="Password123!"required>
 
         <label for="tel">Numéro de telephone</label>
-        <input type="tel" id="tel" name="tel" placeholder="0102030405" required>
+        <input type="tel" id="tel" name="tel" placeholder="0102030405" required pattern="[0-9]{10}">
         <input type="submit" value="Connexion">
 
         <a class="bouton" href="connexion.html">Connexion</a>
         </table>
     </form>
-    </div>
     
 </body>
 </html>
