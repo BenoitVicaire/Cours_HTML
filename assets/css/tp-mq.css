@@ -126,7 +126,7 @@ footer {
         flex-direction: column;
     }
     section {
-        width: 100%;
+        width: auto;
     }
 }
 @media screen and (max-width:667px) and (orientation:landscape) {
