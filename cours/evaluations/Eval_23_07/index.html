@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/body.css">
+    <link rel="stylesheet" href="assets/css/formulaire.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     
     <title>Digital Student</title>
 </head>
@@ -58,12 +60,13 @@
         <!-- Les balises -->
         
         <section id="balises">
-            <h1>Les balises</h1>
-            <p>Le <span class="emphase">HTML</span> est un language de <span class="emphase">balisage</span>, ce qui implique l'usage de <span class="emphase">balises!</span></p>
+            <div id="intro_balise">
+                <h1>Les balises</h1>
+                <p>Le <span class="emphase">HTML</span> est un language de <span class="emphase">balisage</span>, ce qui implique l'usage de <span class="emphase">balises!</span></p>
             <p>Celles ci servent à découper et styliser notre page</p>
-            Elles sont composé d'une balise ouvrante: <pre><code>&lt;#&gt;</code></pre> et d'une balise fermante marqué par le /:
-            <pre><code>&lt;/#&gt;</code></pre>
-
+            Elles sont composé d'une balise ouvrante: &lt;#&gt; et d'une balise fermante marquées par le /:
+            &lt;/#&gt;
+            </div>
             <!-- grid balises -->
 
             <div class="container_balises">
@@ -81,75 +84,75 @@
                     Attributs courament utilisés   
                 </div>
                 <!-- row 1 p -->
-                <div class="cell">
-                    <pre><code>&lt;p&gt;&lt;/p&gt;</code></pre>
+                <div class="cell" id="specialcell">
+                    &lt;p&gt; &lt;/p&gt;</span>
                 </div>
                 <div class="cell">
                     Elle permet de définir un paragraphe. C'est généralement la dedans que l'ont met le corps de notre texte
                 </div>
                 <div class="cell">
-                    <pre><code>&lt;p&gt;Mon corps de texte&lt;/p&gt;</code></pre>    
+                    &lt;p&gt;Mon corps de texte&lt;/p&gt;    
                 </div>
                 <div class="cell">
                     Ø   
                 </div>
                 <!-- row 2 h1-->
                 <div class="cell">
-                    <pre><code>&lt;h1&gt;&lt;/h1&gt;</code></pre>
+                    &lt;h1&gt;&lt;/h1&gt;
                 </div>
                 <div class="cell">
                     Definis un titre d'importance 1 (1 étant le plus important, 6 le moins important)
                 </div>
                 <div class="cell">
-                    <pre><code>&lt;h1&gt;Mon titre tres important&lt;/h1&gt;</code></pre>
-                    <pre><code>&lt;h2&gt;Mon titre moins important&lt;/h2&gt;</code></pre>    
+                    &lt;h1&gt;Mon titre tres important&lt;/h1&gt;
+                    &lt;h2&gt;Mon titre moins important&lt;/h2&gt;    
                 </div>
                 <div class="cell">
                     span, class, id   
                 </div>
                 <!-- row 3 a -->
                 <div class="cell">
-                    <pre><code>&lt;a&gt;&lt;/a&gt;</code></pre>
+                    &lt;a&gt;&lt;/a&gt;
                 </div>
                 <div class="cell">
                     a pour anchor, permet de créer un lien vers un autre element du site, ou vers un autre site
                 </div>
                 <div class="cell">
-                    <pre><code>&lt;a href="monLien" alt="maDescription"&gt;Mon texte affiché&lt;/a&gt;</code></pre>    
+                    &lt;a href="monLien"   alt="maDescription"&gt;Mon texte affiché&lt;/a&gt;    
                 </div>
                 <div class="cell">
                     alt,target   
                 </div>
                 <!-- row 4 img -->
                 <div class="cell">
-                    <pre><code>&lt;img&gt;</code></pre>
+                    &lt;img&gt;
                 </div>
                 <div class="cell">
                     Pour inserer une image (balise autofermante, pas besoin de /img)
                 </div>
                 <div class="cell">
-                    <pre><code>&lt;img src="monChemin" alt="maDescription"&gt;</code></pre>    
+                    &lt;img src="monChemin" alt="maDescription"&gt;    
                 </div>
                 <div class="cell">
                     src,img   
                 </div>
                 <!-- row 5 ul -->
                 <div class="cell" >
-                    <pre><code>&lt;ul&gt;&lt;/ul&gt;</code></pre>
+                    &lt;ul&gt;&lt;/ul&gt;
                 </div>
                 <div class="cell">
                     Crée une liste non ordonée 
                 </div>
                 <div class="cell" id="merged">
-                    <pre><code>&lt;ul&gt; <br>      &lt;li&gt;Mon premier element&lt;/li&gt;<br>      &lt;li&gt;Mon deuxieme element&lt;/li&gt;
-&lt;/ul&gt;</code></pre>    
+                    &lt;ul&gt; <br>      &lt;li&gt;Mon premier element&lt;/li&gt;<br>      &lt;li&gt;Mon deuxieme element&lt;/li&gt;
+&lt;/ul&gt;    
                 </div>
                 <div class="cell">
                     span, class, id  
                 </div>
                 <!-- row 6 li -->
                 <div class="cell">
-                    <pre><code>&lt;li&gt;&lt;/li&gt;</code></pre>
+                    &lt;li&gt;&lt;/li&gt;
                 </div>
                 <div class="cell">
                     Créer un element listé dans une liste
@@ -160,27 +163,27 @@
                 </div>
                 <!-- row 7 div -->
                 <div class="cell">
-                    <pre><code>&lt;div&gt;&lt;/div&gt;</code></pre>
+                    &lt;div&gt;&lt;/div&gt;
                 </div>
                 <div class="cell">
                     Permet de DIViser son site en plusieurs bloc que l'ont peux styliser individuellement.
                     Ont lui donne un attribut class et/ou id pour l'identifier dans le css.
                 </div>
                 <div class="cell">
-                    <pre><code>&lt;div class="ma_classe" id="mon_id"&gt;<br>       Mon bloc a diviser<br>&lt;/div&gt;</code></pre>    
+                    &lt;div class="ma_classe" id="mon_id"&gt;<br>       Mon bloc a diviser<br>&lt;/div&gt;    
                 </div>
                 <div class="cell">
                     classe, id   
                 </div>
                 <!-- row 8 span -->
                 <div class="cell">
-                    <pre><code>&lt;span&gt;&lt;/span&gt;</code></pre>
+                    &lt;span&gt;&lt;/span&gt;
                 </div>
                 <div class="cell">
                     Meme fonction que div mais pour une division sur une seule ligne (un mot, un titre etc)
                 </div>
                 <div class="cell">
-                    <pre><code>&lt;span class="ma_classe" id="mon_id"&gt;Mon mot&lt;/span&gt;</code></pre>    
+                    &lt;span class="ma_classe" id="mon_id"&gt;Mon mot&lt;/span&gt;    
                 </div>
                 <div class="cell">
                     classe, id   
@@ -191,12 +194,74 @@
         <!-- Tips & bonnes pratiques -->
         
         <section id="tips">
-
+            <div id="intro_tips">
+                <h1>Les bonnes pratiques!</h1>
+            
+                <p>Il est important de rendre son code maintenable, souvent vous devrez vous replonger dans votre code des mois voir des années après l'avoir écris, parfois vous devrez reprendre le projet d'un autre webdev.
+                </p>
+                <p>
+                Affin de ne pas trop s'arracher les cheveux il est important de construire son code de manière logique et ordonné ainsi que de respecter certaines convention et commenclature            
+                </p>
+            </div>
+            <div id="conseils">
+                <div class ="card" >
+                    <h2>Pour la partie HTML:</h2>
+                    <ul>
+                        <li>
+                        Commenter son code affin d'indiquer ce que tel bout de code fait, l'idée est simplement d'avoir une vue grossière de ce qui se passe affin de s'y retrouver.
+                        </li>
+                        <li>
+                        Aerer son code, un code compact sans retour a la ligne ne fait aucune difference pour un ordinateur, mais pour nous pauvres humain, c'est la migraine assurée.
+                        </li>
+                        <li>
+                        Indenter son code affin d'ameliorier la visibilité
+                        </li>
+                        <li>
+                        Respecter la nomenclature en vigueur dans votre équipe, ou une convention de nommage classique
+                        </li>
+                    </ul>
+                </div>
+                <div class="card" >
+                    <h2>Pour le CSS</h2>
+                    <ul>
+                        <li>
+                            Les commentaires sont toujours de mises
+                        </li>
+                        <li>
+                            L'indentation aussi
+                        </li>
+                        <li>
+                            Diviser son css en plusieurs fichiers afin de s'y retrouver plus facilement
+                        </li>
+                        
+                        
+                    </ul>  
+                </div>
+            </div>
+            
         </section>
 
         <!-- contact -->
         
         <section id="contact">
+            <h1>Vous avez une question?</h1>
+            <form class="forms" action="#">
+                <label for="fname">Prenom</label><br>
+                <input type="text"id="fname" name="fname" required autofocus ><br>
+                <label for="email">Adresse Mail</label><br>
+                <input type="email" id="email" name="email" required ><br>
+                <textarea name="message" rows="12" cols="35" id="message">Entrez votre message ici</textarea><br>
+                
+                
+                    
+                <input type="checkbox" id="news" value="news"  checked>
+                <label for="news">Recevoir la newsletter</label><br>
+
+                
+                <input type="submit" value="Envoyer">
+
+
+            </form>
 
         </section>
     </main>
@@ -204,7 +269,7 @@
 <!-- Footer  -->
     
     <footer>
-
+        copyrighted
     </footer>
 </body>
 </html>

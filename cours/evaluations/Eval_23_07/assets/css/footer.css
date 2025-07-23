@@ -1,0 +1,9 @@
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 40px;
+    width: 100%;
+    background-color: var(--tertiary_background);
+    justify-content: center;
+    align-items: center;
+}

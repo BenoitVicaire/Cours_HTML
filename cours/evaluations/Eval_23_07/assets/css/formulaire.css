@@ -1,0 +1,55 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    /* width: 500px; */
+    margin: auto;
+    margin-top:20px ;
+    padding: 5px;
+    
+    
+    
+
+    h1 {
+        text-align: center;
+    }
+    
+}
+input {
+    padding: 0px;
+    margin: 0;
+    width:100% ;
+    background-color: var(--secondary_background);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    border: solid var(--tertiary_background) 2px;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    margin-top:20px ;
+    padding: 5px;
+    gap: 5px;
+    
+    
+    
+
+    h1 {
+        text-align: center;
+    }
+    
+}
+
+
+
+@media screen and (max-width:576px){
+    #contact{
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+    form {
+        width: 70%;
+    }
+    
+}

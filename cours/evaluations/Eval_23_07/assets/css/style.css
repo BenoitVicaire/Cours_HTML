@@ -28,7 +28,7 @@ main {
     background-color: var(--main_background);
     font-family: var(--main_text);
     
-    h1 {
+    h1,h2,h3 {
         font-family: var(--secondary_title);
         font-weight: bold;
         font-size: larger;

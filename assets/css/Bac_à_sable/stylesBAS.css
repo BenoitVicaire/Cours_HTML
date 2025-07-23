@@ -61,3 +61,14 @@ nav {
 
     }   
 }
+.testgrid {
+    display: grid;
+    grid-template-columns: auto 150px auto;
+    grid-template-rows: auto auto auto;
+}
+.testcell {
+    border: solid black 1px;
+    display: flex;
+    flex-direction: row;
+    text-wrap: wrap;
+}
