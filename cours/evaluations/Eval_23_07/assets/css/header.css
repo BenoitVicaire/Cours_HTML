@@ -1,0 +1,75 @@
+header {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    background-color: var(--tertiary_background) ;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: var(--link);
+        
+    }
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-right: 8px;
+}
+.navbar a:hover{
+    animation-name: link_hover;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+#logo {
+    font-size: larger;
+    font-family: var(--main_title);
+    font-weight: bold;
+    padding: 8px;
+}
+@keyframes link_hover{
+    0% {
+        background-color: var(--tertiary_background);
+        border: solid var(--main_background) 1px;
+        border-radius: 5px
+    }
+    100%{
+        background-color: var(--secondary_background);
+        border: solid var(--main_background) 1px;
+        border-radius: 5px
+        
+    };
+}
+@keyframes link_hover_bis{
+    0% {
+        background-color: var(--secondary_background);
+        border: solid var(--main_background) 1px;
+        border-radius: 5px
+    }
+    100%{
+        background-color: var(--tertiary_background);
+        border: solid var(--main_background) 1px;
+        border-radius: 5px
+        
+    };
+}
+@media screen and (max-width:576px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
+        background-color: var(--secondary_background);
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    .navbar a:hover{
+    animation-name: link_hover_bis;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}   
+}

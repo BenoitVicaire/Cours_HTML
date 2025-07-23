@@ -1,0 +1,40 @@
+
+/* titre principal */
+@font-face {
+    font-family: 'montserrat';
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+/* titres secondaire  */
+@font-face {
+    font-family: 'nunito_sans';
+    src: url(../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+/* main text */
+@font-face {
+    font-family: 'open_sans';
+    src: url(../fonts/Open_sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+:root {
+    --main_background: #f0f0f0;
+    --main_text: #333333;
+    --main_text: 'open_sans';
+    --main_title: 'montserrat';
+    --secondary_title: 'nunito_sans';
+    --link: #3b82f6;
+    --secondary_background: #e0e0e0;
+    --tertiary_background: #facc15;
+}
+main {
+    background-color: var(--main_background);
+    font-family: var(--main_text);
+    
+    h1 {
+        font-family: var(--secondary_title);
+        font-weight: bold;
+        font-size: larger;
+    }
+}
+.emphase {
+    color: var(--tertiary_background);
+    font-weight: bold;
+}

@@ -5,19 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/body.css">
+    
     <title>Digital Student</title>
 </head>
 <body>
 <!-- Header / navbar -->
 
     <header>
-
+        <span id="logo"><a href="#home">Digital Student</a></span>
+        <nav class="navbar">
+            <a href="#intro" alt="lien vers l'introduction">Introduction</a>
+            <a href="#pourquoi" alt="lien vers la section pourquoi?">Pourquoi?</a>
+            <a href="#balises" alt="lien vers la section balises">Balises</a>
+            <a href="#tips" alt="lien vers la section tips et bonne pratiques">Trucs & astuces</a>
+            <a href="#contact"alt="lien vers le formulaire de contact">Contactez nous</a>
+        </nav>
     </header>
 
 <!-- Main -->
 
     <main>
 
+        <!-- introduction -->
+
+        <section id="intro">
+            <img id ="heroimg" src="assets/images/heroimghtml.webp" alt="Image d'un mur de code html">
+            <div class ="container_intro">
+            <h1>Introduction</h1>
+            <p>Dans ce guide vous allez découvrir le <span class="emphase">HTML/CSS</span> :<br>
+            Son usage, sa syntaxe, ses bonnes pratiques.<br>
+            Ce cours vous permetras de donner vie à vos créations les plus folles.
+            
+            </div>
+        </section>
+
+        <!-- pourquoi apprendre le HTML/CSS -->
+
+        <section id="pourquoi">
+            <h1>Pourquoi apprendre le HTML/CSS?</h1>
+            <p>Le <span class="emphase">HTML</span> (Hypertext Markup Language) est un language de balisage qui permet de créer des pages web.    
+            </p>
+            <p>Le <span class="emphase">CSS</span> (cascading style sheet) quant à lui permet de mettre en forme lesdites pages web.
+            </p>
+            <p>A eux deux nous pouvons réaliser toutes les pages web en circulation sur internet.
+            </p>
+            <p>Apprendre le <span class="emphase">HTML/CSS</span> c'est apprendre à écrire sur la toile pour laisser sa trace dans le monde digitale!
+            </p>
+        </section>
+
+        <!-- Les balises -->
+        
+        <section id="balises">
+            <h1>Les balises</h1>
+            <p>Le <span class="emphase">HTML</span> est un language de <span class="emphase">balisage</span>, ce qui implique l'usage de <span class="emphase">balises!</span></p>
+            <p>Celles ci servent à découper et styliser notre page</p>
+            Elles sont composé d'une balise ouvrante: <pre><code>&lt;#&gt;</code></pre> et d'une balise fermante marqué par le /:
+            <pre><code>&lt;/#&gt;</code></pre>
+
+            <!-- grid balises -->
+
+            <div class="container_balises">
+                <!-- row 0 header -->
+                <div class="cell">
+                    Balises
+                </div>
+                <div class="cell">
+                    Usages:
+                </div>
+                <div class="cell">
+                    Exemples    
+                </div>
+                <div class="cell">
+                    Attributs courament utilisés   
+                </div>
+                <!-- row 1 p -->
+                <div class="cell">
+                    <pre><code>&lt;p&gt;&lt;/p&gt;</code></pre>
+                </div>
+                <div class="cell">
+                    Elle permet de définir un paragraphe. C'est généralement la dedans que l'ont met le corps de notre texte
+                </div>
+                <div class="cell">
+                    <pre><code>&lt;p&gt;Mon corps de texte&lt;/p&gt;</code></pre>    
+                </div>
+                <div class="cell">
+                    Ø   
+                </div>
+                <!-- row 2 h1-->
+                <div class="cell">
+                    <pre><code>&lt;h1&gt;&lt;/h1&gt;</code></pre>
+                </div>
+                <div class="cell">
+                    Definis un titre d'importance 1 (1 étant le plus important, 6 le moins important)
+                </div>
+                <div class="cell">
+                    <pre><code>&lt;h1&gt;Mon titre tres important&lt;/h1&gt;</code></pre>
+                    <pre><code>&lt;h2&gt;Mon titre moins important&lt;/h2&gt;</code></pre>    
+                </div>
+                <div class="cell">
+                    span, class, id   
+                </div>
+                <!-- row 3 a -->
+                <div class="cell">
+                    <pre><code>&lt;a&gt;&lt;/a&gt;</code></pre>
+                </div>
+                <div class="cell">
+                    a pour anchor, permet de créer un lien vers un autre element du site, ou vers un autre site
+                </div>
+                <div class="cell">
+                    <pre><code>&lt;a href="monLien" alt="maDescription"&gt;Mon texte affiché&lt;/a&gt;</code></pre>    
+                </div>
+                <div class="cell">
+                    alt,target   
+                </div>
+                <!-- row 4 img -->
+                <div class="cell">
+                    <pre><code>&lt;img&gt;</code></pre>
+                </div>
+                <div class="cell">
+                    Pour inserer une image (balise autofermante, pas besoin de /img)
+                </div>
+                <div class="cell">
+                    <pre><code>&lt;img src="monChemin" alt="maDescription"&gt;</code></pre>    
+                </div>
+                <div class="cell">
+                    src,img   
+                </div>
+                <!-- row 5 ul -->
+                <div class="cell" >
+                    <pre><code>&lt;ul&gt;&lt;/ul&gt;</code></pre>
+                </div>
+                <div class="cell">
+                    Crée une liste non ordonée 
+                </div>
+                <div class="cell" id="merged">
+                    <pre><code>&lt;ul&gt; <br>      &lt;li&gt;Mon premier element&lt;/li&gt;<br>      &lt;li&gt;Mon deuxieme element&lt;/li&gt;
+&lt;/ul&gt;</code></pre>    
+                </div>
+                <div class="cell">
+                    span, class, id  
+                </div>
+                <!-- row 6 li -->
+                <div class="cell">
+                    <pre><code>&lt;li&gt;&lt;/li&gt;</code></pre>
+                </div>
+                <div class="cell">
+                    Créer un element listé dans une liste
+                </div>
+                <!-- Cell suprimé car fusionné avec ul -->
+                <div class="cell">
+                    span, class, id  
+                </div>
+                <!-- row 7 div -->
+                <div class="cell">
+                    <pre><code>&lt;div&gt;&lt;/div&gt;</code></pre>
+                </div>
+                <div class="cell">
+                    Permet de DIViser son site en plusieurs bloc que l'ont peux styliser individuellement.
+                    Ont lui donne un attribut class et/ou id pour l'identifier dans le css.
+                </div>
+                <div class="cell">
+                    <pre><code>&lt;div class="ma_classe" id="mon_id"&gt;<br>       Mon bloc a diviser<br>&lt;/div&gt;</code></pre>    
+                </div>
+                <div class="cell">
+                    classe, id   
+                </div>
+                <!-- row 8 span -->
+                <div class="cell">
+                    <pre><code>&lt;span&gt;&lt;/span&gt;</code></pre>
+                </div>
+                <div class="cell">
+                    Meme fonction que div mais pour une division sur une seule ligne (un mot, un titre etc)
+                </div>
+                <div class="cell">
+                    <pre><code>&lt;span class="ma_classe" id="mon_id"&gt;Mon mot&lt;/span&gt;</code></pre>    
+                </div>
+                <div class="cell">
+                    classe, id   
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips & bonnes pratiques -->
+        
+        <section id="tips">
+
+        </section>
+
+        <!-- contact -->
+        
+        <section id="contact">
+
+        </section>
     </main>
 
 <!-- Footer  -->
