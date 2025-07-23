@@ -1,0 +1,68 @@
+Probleme de live server : 
+
+je suis en html css, sous visual studio, avec l'extension live server.
+QUand je sauvegarde mon doc ca met a jour en direct la page que je design.
+Je rajoute des :
+@import url(../reset.css);
+@import url(tp7_header.css);
+@import url(tp7_hero.css);
+@import url(tp7_thematique.css);
+@import url(tp7_forms.css);
+@import url(tp7_footer.css);
+Pour mieux structurer la page.
+Mais maintenant sauvegarder mon css ne suffit plus, il faut aussi que j'aille sauvegarder mon html.
+Est ce que tu connais une solution a ce probleme?
+Je ne veux pas que tu invente une réponse, soit tu sait, soit tu ne sais pas.
+
+solution:
+
+Conclusion directe :
+
+Oui, je sais d'où vient le problème.
+Et la meilleure solution avec Live Server, c’est de ne pas utiliser @import dans ton CSS, mais de lier chaque fichier CSS dans ton HTML avec <link>. C’est simple, et ça fonctionne parfaitement avec Live Server.
+
+Souhaites-tu que je t’aide à réorganiser ton HTML avec cette méthode ?
+
+Probleme 2 : pour ma gestion de navbar : 
+.navbar {
+    padding: 5px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color:#0069E0 ;
+    justify-content: flex-start;
+    
+
+    #myLinks {
+        justify-self: flex-end;
+        gap: 50px;
+    }
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+}
+
+   <header>
+<!-- Navbar -->
+        
+        <nav class="navbar">
+            <a href="#home">MyHobby</a>
+
+            <div id="myLinks">
+                <a href="#hero">Acceuil</a>
+                <a href="#thematique">Thématique</a>
+                <a href="#apropos">À propos</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+Je veux "myhobby" a gauche, et mes 4 lien tout a droite
+
+solution : 
+Explication :
+
+    display: flex sur .navbar aligne tous les enfants en ligne.
+
+    margin-left: auto sur #myLinks pousse ce bloc au maximum à droite.
+
+    gap: 50px ajoute de l’espace entre les liens dans #myLinks.

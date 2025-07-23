@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../assets/css/TP7/tp7_style.css">
+    <link rel="stylesheet" href="../../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../../assets/css/TP7/tp7_header.css">
+    <link rel="stylesheet" href="../../../assets/css/TP7/tp7_hero.css">
+    <link rel="stylesheet" href="../../../assets/css/TP7/tp7_thematique.css">
+    <link rel="stylesheet" href="../../../assets/css/TP7/tp7_forms.css">
+    <link rel="stylesheet" href="../../../assets/css/TP7/tp7_footer.css">
+    <title>Mes passions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+<!-- Navbar -->
+        
+        <nav class="navbar">
+            <a href="#home" class="active">MyHobby</a>
+
+            <div id="myLinks">
+                <a href="#hero">Acceuil</a>
+                <a href="#thematique">Thématique</a>
+                <a href="#apropos">À propos</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+<!-- Section Hero -->
+        <section id="hero">
+            <h1>Partage ta passion</h1>
+            <p>On à tous une passion, quel est la tienne?</p>
+            <div id="btn_cta">
+                Commencer
+            </div>
+        </section>
+<!-- Thématique -->
+        <section id="thematique">
+
+            <h2>Nos thématique populaire</h2>
+            <div class="thematique_card">
+                <h1>Jeux vidéos</h1>
+                <img src="../../../assets/images/TP7/Claviersouris.webp" alt="Image de setup gaming">
+                <p>Les jeux vidéo dans toutes leurs splendeurs,MMO, Moba, RPG, Action Shooter, CityBuilder; ARPG</p>
+            </div>
+
+            <div class="thematique_card">
+                <h1>Film</h1>
+                <img src="../../../assets/images/TP7/film.jpg" alt="Image representant les films">
+                <p>La passion du film, primé ou nanard, action ou romance.</p>
+            </div>
+
+            <div class="thematique_card">
+                <h1>Manga</h1>
+                <img src="../../../assets/images/TP7/onepiece.jpg" alt="Image representant one piece">
+                <p>Les mangas et leur univers infinis, le Shinigami Luffy passera t-il en SuperSayan 4 pour battre Madara?</p>
+            </div>
+
+            <div class="thematique_card">
+                <h1>Aquaponey</h1>
+                <img src="../../../assets/images/TP7/aquaponey.webp" alt="Image poney dans une piscine">
+                <p>Les jeux vidéo dans toutes leurs splendeurs,MMO, Moba, RPG, Action Shooter, CityBuilder; ARPG</p>
+            </div>
+
+        </section>
+<!-- A propos -->
+        <div class="container_form_contact">
+        <section id="apropos">
+            <h3>Pourquoi nous rejoindre?</h3>
+            <p>Viens partager ta passion avec nous et découvre les notres. <br>
+                Viens, viens! on est bien!
+            </p>
+        </section>
+<!-- Formulaire de contact -->
+        <section id="contact">
+            <h3>Contact</h3>
+            <form action="">
+                <label for="fname">Prenom</label>
+                <input type="text" id="fname" name="fname" placeholder="Jean" required>
+
+                <label for="lname">Nom</label>
+                <input type="text" id="lname" name="lname" placeholder="Dupont" required>
+
+                <label for="mail">Adresse mail</label>
+                <input type="email" id="mail" name="mail" placeholder="JeanDupont@gmail.com">
+            </form>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <h1>Je suis un text centré</h1>
+    </footer>
+<!-- Scripts -->
+    <script>
+function myFunction() {
+    const x = document.getElementById("myLinks");
+    x.classList.toggle("show");
+}
+</script>
+</body>
+</html>

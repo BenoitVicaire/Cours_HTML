@@ -1,0 +1,61 @@
+.navbar {
+    padding: 5px 10px;
+    height: 40px;
+    
+    display: flex;
+    flex-direction: row;
+    background-color:#0069E0 ;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    position: relative;   
+}
+.navbar #myLinks { 
+        font-size: 18px;
+        display: flex;
+        margin-left: auto;
+        padding-right: 10px;
+        gap: 35px;
+        }
+.navbar a:hover {
+        animation-name: linkhover;
+        animation-duration: 0.1s;
+        animation-fill-mode: forwards;
+    }
+.navbar a {
+        text-decoration: none;
+        color: whitesmoke;
+        }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+@keyframes linkhover {
+    0% {
+        color: whitesmoke;
+    }
+    100% {
+        color: #0A0A0A;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: auto;
+    }
+    .navbar #myLinks {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        gap: 5px;
+        }
+    .navbar > a:first-child {
+    align-self: center; /* ⬅️ Centre "MyHobby" */
+}
+    
+}
+

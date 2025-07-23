@@ -1,0 +1,63 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h1{
+        text-align: center;
+    }
+}
+.cell {
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+    border-top: solid black 2px;
+}
+.cell svg{
+        width: 24px;
+        height: 24px;   
+}
+
+.container_pdc {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 1fr 1fr ;
+    width: 400px;
+    height: auto;
+    border: solid black 1px;
+    margin: auto;
+
+    h1{
+        grid-row: 1;
+        grid-column: 1 /span 4;
+    }
+}
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: whitesmoke;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+#logo {
+    font-size: 24px;
+    padding-left:10px ;
+}
+#MyLinks{
+    gap: 10px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    
+    a{
+        gap: 10px;
+
+    }   
+}

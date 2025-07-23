@@ -14,9 +14,6 @@
         background: radial-gradient(circle,rgba(0, 2, 41, 1) 0%, rgba(184, 0, 92, 1) 20%, rgba(0, 8, 163, 1) 100%);
         translate: -2px -2px;
     }
-    /* 50% {
-
-    } */
     60% {
         background: #000229;
         background: radial-gradient(circle,rgba(0, 2, 41, 1) 0%, rgba(184, 0, 92, 1) 51%, rgba(0, 8, 163, 1) 100%);
@@ -136,4 +133,22 @@ body {
     animation-duration: 1s;
     animation-fill-mode:forwards ;
 }
+.grid2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    background-color: aqua;
+}
 
+.container_membres {
+    grid-row: 1;
+    grid-column: 2;
+}
+.video {
+    grid-row: 1;
+    grid-column: 1;
+}
+.forms{
+    grid-row: 1;
+    grid-column: 3;
+}
